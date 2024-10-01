@@ -1,0 +1,36 @@
+body {
+  background-color: rgba(2, 32, 70, 0.895);
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+h1,
+h2,
+h3,
+p {
+  color: rgb(184, 213, 217);
+}
+
+h2 {
+  text-align: center;
+}
+
+.title {
+  text-decoration: underline;
+}
+
+.aboutMe {
+  width: 50%;
+  position: fixed;
+}
+
+.tags {
+  max-height: 1%;
+}
+
+.portfolio {
+  margin-left: 0;
+}
