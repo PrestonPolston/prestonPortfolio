@@ -1,5 +1,6 @@
 body {
   background-color: rgba(2, 32, 70, 0.895);
+  margin: 0;
 }
 
 .container {
@@ -25,10 +26,31 @@ h2 {
 .aboutMe {
   width: 50%;
   position: fixed;
+  left: 20px;
 }
 
 .tags {
-  max-height: 1%;
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+}
+
+.tags a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.tags img {
+  width: 40px;
+  height: auto;
+  cursor: pointer;
+}
+
+.tags img:hover {
+  opacity: 0.8;
 }
 
 .portfolio {
