@@ -3,7 +3,7 @@ import WorkHistory from "./WorkHistory";
 
 const HomePageB = () => {
   return (
-    <div className="containerB">
+    <div className="homePageB">
       <Portfolio />
       <WorkHistory />
     </div>

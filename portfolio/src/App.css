@@ -15,7 +15,6 @@
   font-weight: 400;
 }
 
-/************ Default Css ************/
 * {
   margin: 0;
   padding: 0;
@@ -23,6 +22,7 @@
 }
 
 html {
+  height: 100vh;
   scroll-behavior: smooth;
   scroll-padding-top: 75px;
 }
@@ -30,23 +30,103 @@ html {
 body {
   font-weight: 400;
   overflow-x: hidden;
-  position: relative;
+  position: fixed;
   background-color: #121212 !important;
   color: #fff !important;
   font-family: "Centra", sans-serif !important;
 }
-/* navbar */
+
+/* navbar styles */
 nav {
-  display: inline;
+  height: 10vh;
 }
+
+.navContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 10vh;
+}
+
 .prestonLogo {
-  width: 10%;
-  top: 0;
+  width: 100%;
+  max-width: 10%;
+  height: auto;
 }
+
+.prestonLogo img {
+  width: 100%;
+  height: auto;
+  max-height: 100%;
+}
+
 .navText {
-  top: 1%;
-  font-family: "Centra", sans-serif;
-  font-weight: 700;
+  display: flex;
+  justify-content: space-evenly;
+  flex-grow: 1;
+  align-items: center;
+}
+
+.navText a {
+  text-decoration: none;
+  color: #fff;
+  flex: 1;
   text-align: center;
-  margin-top: 0;
+}
+
+.navText a:hover {
+  box-shadow: inset 1px 0 1em #61478a;
+  color: white;
+  text-decoration: underline;
+}
+
+/* Page Container Styles */
+.pageContainer {
+  display: flex;
+  width: 100%;
+  height: calc(90vh);
+}
+
+/* split side of screen */
+.homePageA,
+.homePageB {
+  flex: 1;
+  height: 100%;
+  width: 50vb;
+}
+
+.scrollableContent {
+  flex: 1;
+  overflow-y: auto;
+  padding: 20px;
+}
+/* centers all h2 titles for display on right side of screen */
+.title {
+  text-align: center;
+}
+/* style about me page */
+.aboutMe {
+  margin-top: 20vb;
+  margin-left: 5vi;
+}
+/* footer fixed links in lower left of page */
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #121212;
+  z-index: 1000;
+  padding: 10px 0;
+}
+
+.tags {
+  display: flex;
+  justify-content: left;
+}
+
+.tags img {
+  width: 36px;
+  height: auto;
+  margin: 0 10px;
 }

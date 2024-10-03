@@ -14,23 +14,8 @@ const AboutMe = () => {
           team-driven environment.
         </p>
       </div>
-      <div className="tags">
-        <a
-          href="https://github.com/PrestonPolston"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img src="github-mark-white.png" alt="gitHub" />
-        </a>
-        <a
-          href="https://www.linkedin.com/in/prestonpolston/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img src="In-White-96.png" alt="LinkedIn" />
-        </a>
-      </div>
     </>
   );
 };
+
 export default AboutMe;

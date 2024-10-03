@@ -2,7 +2,7 @@ import AboutMe from "./AboutMe";
 
 const HomePageA = () => {
   return (
-    <div>
+    <div className="homePageA">
       <AboutMe />
     </div>
   );
