@@ -1,9 +1,9 @@
-import AboutMe from "./AboutMe";
+import Preston from "./Preston";
 
 const HomePageA = () => {
   return (
     <div className="homePageA">
-      <AboutMe />
+      <Preston />
     </div>
   );
 };
