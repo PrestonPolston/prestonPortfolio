@@ -3,9 +3,10 @@ import linkedIn from "../assets/image/linkedIn.png";
 
 const Footer = () => {
   return (
-    <div className="footer">
-      <div className="tags">
+    <div id="footer">
+      <div id="tags">
         <a
+          className="tag"
           href={"https://github.com/PrestonPolston"}
           target="_blank"
           rel="noopener noreferrer"
@@ -13,6 +14,7 @@ const Footer = () => {
           <img src={gitHub} alt="GitHub" />
         </a>
         <a
+          className="tag"
           href="https://www.linkedin.com/in/prestonpolston/"
           target="_blank"
           rel="noopener noreferrer"

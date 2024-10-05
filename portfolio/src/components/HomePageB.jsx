@@ -4,10 +4,10 @@ import WorkHistory from "./WorkHistory";
 
 const HomePageB = () => {
   return (
-    <div className="homePageB">
-      <AboutMe />
+    <div id="homePageB">
+      {/* <AboutMe />
       <Portfolio />
-      <WorkHistory />
+      <WorkHistory /> */}
     </div>
   );
 };

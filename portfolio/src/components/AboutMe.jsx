@@ -1,7 +1,7 @@
 const AboutMe = () => {
   return (
     <>
-      <h2 className="title">About Me</h2>
+      {/* <h2 className="title">About Me</h2>
       <p>
         My name is Preston Polston, and I am an aspiring Full Stack Engineer
         based in Atlanta, GA. With a strong foundation in both front-end and
@@ -31,7 +31,7 @@ const AboutMe = () => {
         to thrive under pressure. I am enthusiastic about bringing my diverse
         background, technical knowledge, and commitment to excellence to future
         challenges in the software engineering field.
-      </p>
+      </p> */}
     </>
   );
 };

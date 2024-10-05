@@ -1,10 +1,6 @@
 import Preston from "./Preston";
 
 const HomePageA = () => {
-  return (
-    <div className="homePageA">
-      <Preston />
-    </div>
-  );
+  return <div id="homePageA">{/* <Preston /> */}</div>;
 };
 export default HomePageA;

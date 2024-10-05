@@ -24,11 +24,11 @@ function NavBar() {
     <Navbar className={scrolled ? "scrolled" : ""}>
       <Container>
         <div className="navContainer">
-          <a className="prestonLogo" href="/">
+          {/* <a className="prestonLogo" href="/">
             <img src={prestonImage} alt="Logo" />
-          </a>
+          </a> */}
           <Nav className="navText">
-            <Nav.Link
+            {/* <Nav.Link
               href="#home"
               className={
                 activeLink === "home" ? "activeNavBarLink" : "NavBarLink"
@@ -54,7 +54,7 @@ function NavBar() {
               onClick={() => onUpdateActiveLink("Projects")}
             >
               Projects
-            </Nav.Link>
+            </Nav.Link> */}
           </Nav>
         </div>
       </Container>
