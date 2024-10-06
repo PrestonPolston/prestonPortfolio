@@ -8,10 +8,12 @@ function App() {
   return (
     <>
       <NavBar />
-      <div className="pageContainer">
-        <HomePageA />
-        <div className="scrollableContent">
+      <div id="pageContainer">
+        <div id="flexContainer">
+          <HomePageA />
+          {/* <div className="scrollableContent"> */}
           <HomePageB />
+          {/* </div> */}
         </div>
       </div>
       <Footer />

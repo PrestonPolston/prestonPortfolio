@@ -2,7 +2,7 @@ import Preston from "./Preston";
 
 const HomePageA = () => {
   return (
-    <div className="homePageA">
+    <div id="homePageA">
       <Preston />
     </div>
   );

@@ -23,12 +23,12 @@ function NavBar() {
   return (
     <Navbar className={scrolled ? "scrolled" : ""}>
       <Container>
-        <div className="navContainer">
+        <div id="navContainer">
           <a className="prestonLogo" href="/">
             <img src={prestonImage} alt="Logo" />
           </a>
-          <Nav className="navText">
-            <Nav.Link
+          <Nav id="navText">
+            <Nav.Link 
               href="#home"
               className={
                 activeLink === "home" ? "activeNavBarLink" : "NavBarLink"
