@@ -7,16 +7,16 @@ import "./App.css";
 function App() {
   return (
     <>
-      <NavBar />
       <div id="pageContainer">
+        <NavBar />
         <div id="flexContainer">
           <HomePageA />
-          {/* <div className="scrollableContent"> */}
-          <HomePageB />
-          {/* </div> */}
+          <div>
+            <HomePageB />
+          </div>
         </div>
+        <Footer />
       </div>
-      <Footer />
     </>
   );
 }
