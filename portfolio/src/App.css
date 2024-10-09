@@ -30,8 +30,22 @@ html {
   scroll-behavior: smooth;
   scroll-padding-top: 75px;
 }
+#pageContainer {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  position: relative;
+}
+#flexContainer {
+  flex: 1;
+  display: flex;
+  overflow: hidden;
+}
 nav {
   height: 8vh;
+  width: 100%;
+  background-color: black;
+  position: fixed;
 }
 #navContainer {
   display: flex;
@@ -69,23 +83,34 @@ nav {
   width: 100%;
 }
 #homePageA .preston {
+  position: fixed;
+  width: 20em;
   margin-top: 20vh;
   padding-left: 5%;
   color: white;
 }
 #homePageB {
-  height: 100%;
+  margin-left: 15em;
+  margin-top: 8vh;
+  height: calc(100vh - 16vh);
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  overflow-y: auto;
 }
+
 #footer {
   height: 8vh;
-  margin-bottom: 0rem;
-  position: relative;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 #tags {
-  height: 100%;
+  margin-bottom: 0;
   width: 6em;
-  position: absolute;
+  position: relative;
   display: flex;
 }
 .tag {

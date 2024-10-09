@@ -21,39 +21,39 @@ function NavBar() {
   };
 
   return (
-    <Navbar className={scrolled ? "scrolled" : ""}>
+    <Navbar className={scrolled ? "scrolled" : "notScrolled"}>
       <Container>
         <div id="navContainer">
           <a className="prestonLogo" href="/">
             <img src={prestonImage} alt="Logo" />
           </a>
           <Nav id="navText">
-            <Nav.Link 
-              href="#home"
+            <Nav.Link
+              href="#aboutMe"
               className={
-                activeLink === "home" ? "activeNavBarLink" : "NavBarLink"
+                activeLink === "aboutMe" ? "activeNavBarLink" : "NavBarLink"
               }
-              onClick={() => onUpdateActiveLink("home")}
+              onClick={() => onUpdateActiveLink("aboutMe")}
             >
-              Home
+              About Me
             </Nav.Link>
             <Nav.Link
-              href="#Skills"
+              href="#portfolio"
               className={
-                activeLink === "Skills" ? "activeNavBarLink" : "NavBarLink"
+                activeLink === "portfolio" ? "activeNavBarLink" : "NavBarLink"
               }
-              onClick={() => onUpdateActiveLink("Skills")}
+              onClick={() => onUpdateActiveLink("portfolio")}
             >
-              Skills
+              Portfolio
             </Nav.Link>
             <Nav.Link
-              href="#Projects"
+              href="#workHistory"
               className={
-                activeLink === "Projects" ? "activeNavBarLink" : "NavBarLink"
+                activeLink === "workHistory" ? "activeNavBarLink" : "NavBarLink"
               }
-              onClick={() => onUpdateActiveLink("Projects")}
+              onClick={() => onUpdateActiveLink("workHistory")}
             >
-              Projects
+              Work History
             </Nav.Link>
           </Nav>
         </div>

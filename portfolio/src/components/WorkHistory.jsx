@@ -1,7 +1,7 @@
 const WorkHistory = () => {
   return (
-    <div className="workHistory">
-      {/* <h2 className="title">Work History</h2>
+    <div id="workHistory">
+      <h2 className="title">Work History</h2>
       <div>
         <h3 className="jobTitle">Lighting Programmer</h3>
         <h4 className="company">Motion Picture Industry</h4>
@@ -65,7 +65,7 @@ const WorkHistory = () => {
             protect assets, demonstrating adaptability.{" "}
           </li>
         </ul>
-      </div> */}
+      </div>
     </div>
   );
 };
