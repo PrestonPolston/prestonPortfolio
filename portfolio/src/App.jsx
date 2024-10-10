@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 import NavBar from "./components/NavBar";
 import HomePageA from "./components/HomePageA";
 import HomePageB from "./components/HomePageB";

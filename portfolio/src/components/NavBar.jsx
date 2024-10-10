@@ -1,60 +1,27 @@
-import { useState, useEffect } from "react";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
+import { Link } from "react-scroll";
 import prestonImage from "../assets/image/prestonImage.webp";
 
 function NavBar() {
-  const [activeLink, setActiveLink] = useState("home");
-  const [scrolled, setScrolled] = useState(false);
-
-  useEffect(() => {
-    const onScroll = () => {
-      setScrolled(window.scrollY > 50);
-    };
-    window.addEventListener("scroll", onScroll);
-    return () => window.removeEventListener("scroll", onScroll);
-  }, []);
-
-  const onUpdateActiveLink = (value) => {
-    setActiveLink(value);
-  };
-
   return (
-    <Navbar className={scrolled ? "scrolled" : "notScrolled"}>
+    <Navbar>
       <Container>
         <div id="navContainer">
           <a className="prestonLogo" href="/">
             <img src={prestonImage} alt="Logo" />
           </a>
           <Nav id="navText">
-            <Nav.Link
-              href="#aboutMe"
-              className={
-                activeLink === "aboutMe" ? "activeNavBarLink" : "NavBarLink"
-              }
-              onClick={() => onUpdateActiveLink("aboutMe")}
-            >
+            <Link to="aboutMe" spy={true} smooth={true} duration={500}>
               About Me
-            </Nav.Link>
-            <Nav.Link
-              href="#portfolio"
-              className={
-                activeLink === "portfolio" ? "activeNavBarLink" : "NavBarLink"
-              }
-              onClick={() => onUpdateActiveLink("portfolio")}
-            >
+            </Link>
+            <Link to="portfolio" spy={true} smooth={true} duration={500}>
               Portfolio
-            </Nav.Link>
-            <Nav.Link
-              href="#workHistory"
-              className={
-                activeLink === "workHistory" ? "activeNavBarLink" : "NavBarLink"
-              }
-              onClick={() => onUpdateActiveLink("workHistory")}
-            >
+            </Link>
+            <Link to="workHistory" spy={true} smooth={true} duration={500}>
               Work History
-            </Nav.Link>
+            </Link>
           </Nav>
         </div>
       </Container>

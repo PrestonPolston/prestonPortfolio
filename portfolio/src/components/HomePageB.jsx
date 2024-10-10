@@ -11,4 +11,5 @@ const HomePageB = () => {
     </div>
   );
 };
+
 export default HomePageB;

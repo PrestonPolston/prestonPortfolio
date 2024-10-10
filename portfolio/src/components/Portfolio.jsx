@@ -1,6 +1,6 @@
 const Portfolio = () => {
   return (
-    <div id="portfolio">
+    <section id="portfolio">
       <h2 className="title">Portfolio</h2>
       <p>Lorem ipsum dolor sit amet...</p>
       <p>Lorem ipsum dolor sit amet...</p>
@@ -16,7 +16,7 @@ const Portfolio = () => {
       <p>Lorem ipsum dolor sit amet...</p>
       <p>Lorem ipsum dolor sit amet...</p>
       <p>Lorem ipsum dolor sit amet...</p>
-    </div>
+    </section>
   );
 };
 export default Portfolio;

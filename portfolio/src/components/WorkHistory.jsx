@@ -1,6 +1,6 @@
 const WorkHistory = () => {
   return (
-    <div id="workHistory">
+    <section id="workHistory">
       <h2 className="title">Work History</h2>
       <div>
         <h3 className="jobTitle">Lighting Programmer</h3>
@@ -66,7 +66,7 @@ const WorkHistory = () => {
           </li>
         </ul>
       </div>
-    </div>
+    </section>
   );
 };
 export default WorkHistory;
